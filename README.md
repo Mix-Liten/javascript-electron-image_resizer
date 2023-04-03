@@ -17,18 +17,28 @@ $ npm ci
 Run:
 
 ```bash
-npm start
+$ npm start
 ```
 
 You can also use `Electronmon` to constantly run and not have to reload after making changes
 
 ```bash
-npm run dev
+$ npm run dev
 ```
 
 ## Packaging
 
-There are multiple ways to package Electron apps. I would suggest [Electron Forge](https://www.electronforge.io/). I did not implement any packaging into this app.
+There are multiple ways to package Electron apps. I use [electron-builder](https://www.electron.build/).
+
+```bash
+$ npm run build
+```
+
+If you are using Windows, I offer a command that can build portable version
+
+```bash
+$ npm run build-portable
+```
 
 ## Developer Mode
 
