@@ -4,7 +4,7 @@ const fs = require('fs')
 const resizeImg = require('resize-img')
 const { app, BrowserWindow, Menu, ipcMain, shell } = require('electron')
 
-const isDev = process.env.NODE_ENV !== 'production'
+const isDev = process.env.NODE_ENV === 'dev'
 const isMac = process.platform === 'darwin'
 
 let mainWindow
